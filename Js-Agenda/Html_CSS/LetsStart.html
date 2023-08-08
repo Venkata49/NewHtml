@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Number Input Field</title>
+  <style>
+    .container {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    input {
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <input type="text" id="numberInput" placeholder="Enter a number" />
+    <button onclick="handleButtonClick()">Submit</button>
+  </div>
+
+  <script>
+    function handleButtonClick() {
+      var numberInput = parseInt(document.getElementById("numberInput").value);
+      if (isNaN(numberInput) || numberInput <= 0) {
+        alert("Invalid input! Please enter a positive number.");
+      } else if (numberInput % 2 === 0) {
+        var nextEvenNumbers = [];
+        for (var i = 1; i <= 3; i++) {
+          nextEvenNumbers.push(numberInput + i * 2);
+        }
+        alert("Next 3 even numbers: " + nextEvenNumbers.join(", "));
+      } else {
+        var nextOddNumbers = [];
+        for (var i = 1; i <= 3; i++) {
+          nextOddNumbers.push(numberInput + i * 2 - 1);
+        }
+        alert("Next 3 odd numbers: " + nextOddNumbers.join(", "));
+      }
+    }
+  </script>
+</body>
+</html>

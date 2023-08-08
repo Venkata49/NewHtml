@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <!-- OperstorS -->
+
+  <p id="demo"></p>
+  <p id="demo1"></p>
+  <p id="demo2"></p>
+  <p id="demo3"></p>
+  <p id="demo4"></p>
+  <p id="demo5"></p>
+  <p id="demo6"></p>
+  <p id="demo7"></p>
+  <p id="demo8"></p>
+  <p id="demo9"></p>
+  <p id="demo10"></p>
+  <p id="demo11"></p>
+  <p id="demo12"></p>
+  <p id="demo13"></p>
+  <p id="demo14"></p>
+  <p id="demo15"></p>
+
+  <script>
+    var x = 10;
+    var y  =  20;
+    var z = x+y;
+    document.getElementById("demo").innerHTML=z; //30
+
+    // Assignment Operators
+
+    var name = 40+"jith";
+    document.getElementById("demo1").innerHTML=name;//40jith
+
+
+    // Arithmatic Operators
+
+    var x1 = 100+50;
+    var x2 = 100/50;
+
+    document.getElementById("demo2").innerHTML=x1;
+    document.getElementById("demo3").innerHTML=x2;
+
+    // Increment Operator
+
+    var a =8;
+    a++;
+    var b = a;
+    document.getElementById("demo4").innerHTML=b;
+
+    // Operators Preseding
+
+    document.getElementById("demo5").innerHTML=(50+200)*3;
+
+    // Data Types
+
+    var age = 23;
+    var name = " venkata";
+    var vachicles = ["atuo","bike","cars","trippers","tracters"];
+    var person = {firstname:"kumar", lastname : "vankam",age : 23};
+    
+    // Objects
+
+    var cars = {type:"acura",model:"Interior",color:"white"};
+    document.getElementById("demo6").innerHTML=cars.type;
+
+    // Object output
+
+    document.getElementById("demo7").innerHTML=person.firstname+"has"+
+    person.age;
+
+
+    // Strings & String length
+
+    var std = "kiran";
+    var std1 = "sreeni";
+    document.getElementById("demo8").innerHTML=std + "<br>"+ std1+"<br>"+std.length;
+
+    // random number
+
+    document.getElementById("demo9").innerHTML=Math.random();
+
+    // max , min, round, floor, ceil
+
+    document.getElementById("demo10").innerHTML=Math.min(12,232,-23,43,-9);
+    document.getElementById("demo10").innerHTML=Math.max(12,232,-23,43,-9);
+    document.getElementById("demo10").innerHTML=Math.round(12.55);
+    document.getElementById("demo10").innerHTML=Math.floor(12.95);
+    document.getElementById("demo10").innerHTML=Math.ceil(12.2);
+
+    // Arrays
+    var fruits = ["apple","mango","orange","grap"];
+    document.getElementById("demo11").innerHTML=fruits[0];
+    document.getElementById("demo11").innerHTML=fruits[1];
+    document.getElementById("demo11").innerHTML=fruits.length;
+
+    //attributes
+
+    document.getElementById("demo11").innerHTML=fruits.toString();
+    document.getElementById("demo11").innerHTML=fruits.join("*");
+
+    // push , pop, shift, unshift
+
+    var fruits1 =["applaes","banannas","pears","grapes"];
+    fruits1.pop();
+    fruits1.shift();
+    fruits1.push("cherry");
+    fruits1.unshift("cherry");
+    fruits1[0]="kiwii";
+    delete fruits1[3];
+    document.getElementById("demo12").innerHTML=fruits1.join("*");
+
+    // slice()
+
+    
+    
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
